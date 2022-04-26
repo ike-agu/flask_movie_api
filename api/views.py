@@ -1,4 +1,4 @@
-from flask import Blueprint
+from flask import Blueprint, jsonify
 
 main = Blueprint('main', __name__)
 
@@ -11,4 +11,4 @@ def movies():
 
     movies=[]
 
-    return jsonify({'movies': movie})
+    return jsonify({'movies': movies})
